@@ -1,0 +1,115 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* 全体の背景色 */
+}
+
+header {
+    background-color: #333; /* ヘッダーの背景色 [cite: 42] */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #555; /* ナビゲーションバーの背景色 [cite: 42] */
+    color: white;
+    padding: 0.5em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    display: flex; /* flexboxでサイドバーとコンテンツを配置 */
+    margin: 20px;
+    gap: 20px; /* セクション間の隙間 */
+}
+
+.left-sidebar {
+    flex: 1; /* 左サイドバーの幅 */
+    background-color: #e0e0e0; /* 左サイドバーの背景色 [cite: 42] */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.content {
+    flex: 3; /* メインコンテンツの幅 */
+    background-color: #fff; /* コンテンツの背景色 [cite: 42] */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.right-sidebar {
+    flex: 1; /* 右サイドバーの幅 */
+    background-color: #e0e0e0; /* 右サイドバーの背景色 [cite: 42] */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333; /* フッターの背景色 [cite: 42] */
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* その他のスタイル（テーブル、フォーム、画像など） */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+form label, form input, form textarea, form button {
+    display: block; /* 各フォーム要素を縦に並べる */
+    margin-bottom: 10px;
+    width: calc(100% - 20px); /* サイドバーのパディングを考慮 */
+}
+
+form input[type="submit"], form input[type="reset"], form button {
+    width: auto; /* ボタンの幅を自動調整 */
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover, form button:hover {
+    background-color: #0056b3;
+}

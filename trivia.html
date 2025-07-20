@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたのウェブサイト名 - トリビア</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>[ここにウェブサイト名/タイトル]</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="portfolio.html">PORTFOLIO</a></li>
+            <li><a href="trivia.html">TRIVIA</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <aside class="left-sidebar">
+            <h2>Useful Links</h2>
+            <ul>
+                <li><a href="https://example.com/link1" target="_blank">リンク1</a></li>
+                <li><a href="https://example.com/link2" target="_blank">リンク2</a></li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h2>トリビアクイズ / BMI計算機</h2>
+            <h3>BMI (Body Mass Index) 計算機</h3> [cite: 73]
+            <p>身長と体重を入力してください。あなたのBMIとカテゴリは何ですか？</p> [cite: 74]
+            <label for="height">身長 (cm):</label><br>
+            <input type="number" id="height" name="height" min="1" step="0.1"><br><br> <label for="weight">体重 (kg):</label><br>
+            <input type="number" id="weight" name="weight" min="1" step="0.1"><br><br> <button onclick="calculateBMI()">BMIを計算</button><br><br> <p>あなたのBMI: <span id="bmiResult"></span></p>
+            <p>カテゴリ: <span id="bmiCategory"></span></p>
+
+            </section>
+        <aside class="right-sidebar">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5"></textarea><br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </form>
+        </aside>
+    </div>
+    <footer>
+        <p>&copy; 2025 あなたの名前. 作成日: 2025年7月20日</p>
+        <p><a href="https://yourblog.com" target="_blank">あなたのブログ</a> | <a href="https://yourlinkedin.com" target="_blank">LinkedIn</a></p>
+    </footer>
+    <script src="script.js"></script> </body>
+</html>
